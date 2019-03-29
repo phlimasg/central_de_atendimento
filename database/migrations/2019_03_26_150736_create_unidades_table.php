@@ -16,10 +16,10 @@ class CreateUnidadesTable extends Migration
         Schema::create('unidades', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('uni_nome');
-            $table->string('uni_desc');
             $table->string('uni_sendmail');
-            $table->string('uni_sms');
-            $table->string('uni_logo_url');
+            $table->string('uni_sms')->nullable();
+            $table->string('uni_logo_url')->nullable();
+            $table->string('user');
             $table->timestamps();
         });
     }

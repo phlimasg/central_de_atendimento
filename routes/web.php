@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('uni_index');
-});
+Route::get('{id}/unidades','UnidadesController@index');
+Route::post('{id}/unidades','UnidadesController@store');

@@ -45,7 +45,9 @@
 
   
 <div class="col-sm-11">
-        @yield('content')
+        <div class="container-fluid">
+            @yield('content')
+        </div>
 </div>
 
 </body>
